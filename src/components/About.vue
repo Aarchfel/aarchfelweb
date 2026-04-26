@@ -76,13 +76,13 @@ const tools = [
       <div class="main-grid">
         <div class="left-sect">
           <p class="label"><img src="@/assets/about/age.svg" />Age</p>
-          <h1 class="value">~14 Years Old</h1>
+          <p class="value">~19 Years Old</p>
           <p class="label"><img src="@/assets/about/location.svg" />Location</p>
-          <h1 class="value">Indonesia, Bogor</h1>
+          <p class="value">Indonesia, Bogor</p>
           <p class="label"><img src="@/assets/about/roles.svg" />Roles</p>
-          <h1 class="value">Discord Bot Dev - Frontend Dev - Pentester - Artist</h1>
+          <p class="value">Discord Bot Dev - Frontend Dev - Pentester - Artist</p>
           <p class="label"><img src="@/assets/about/motto.svg" />Motto</p>
-          <h1 class="value">L'Art du Savoir</h1>
+          <p class="value">L'Art du Savoir</p>
         </div>
 
         <div class="div-v" />
@@ -156,7 +156,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem 0%;
+  padding: 2rem 0.2rem;
 }
 
 .main-grid {

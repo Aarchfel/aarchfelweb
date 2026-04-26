@@ -24,7 +24,7 @@ function onNavClick() {
   ignoreScroll = true;
   setTimeout(() => {
     ignoreScroll = false;
-    lastY.value = window.pageXOffset;
+    lastY.value = window.pageYOffset;
   }, 1100);
 }
 

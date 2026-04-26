@@ -125,7 +125,7 @@ span {
   min-height: 100vh;
   background: rgb(23, 23, 23);
   color: white;
-  padding: 30vh 16%;
+  padding: 12vh 18%;
 }
 
 .sect-anim {
