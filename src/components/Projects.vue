@@ -24,7 +24,7 @@ onMounted(() => {
       <div class="card" v-for="repo in sorted" :key="repo.id">
         <div class="thumbnail">
           <img
-            :src="`https://opengraph.githubassets.com/1/${repo.owner.login}/${repo / name}`"
+            :src="`https://opengraph.githubassets.com/1/${repo.owner.login}/${repo.name}`"
             :alt="repo.name"
             @error="(err) => (err.target.style.display = 'none')"
           />
