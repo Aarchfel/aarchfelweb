@@ -200,8 +200,9 @@ p a {
 .desc {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.4);
-  line-height: 2.1em;
+  line-height: 1em;
   flex: 1;
+  margin-top: 1.2em;
 }
 
 .bottom {
