@@ -1,5 +1,6 @@
 # Very coolio website but goofy
 Keep in mind, im still learning frontend, so please dont ask my why it looks so bad ;w;
+Ill add mobile support pretty soon.
 
 ## Customize configuration
 
