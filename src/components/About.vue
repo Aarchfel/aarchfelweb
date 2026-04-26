@@ -76,7 +76,7 @@ const tools = [
       <div class="main-grid">
         <div class="left-sect">
           <p class="label"><img src="@/assets/about/age.svg" />Age</p>
-          <p class="value">~19 Years Old</p>
+          <p class="value">~1r Years Old</p>
           <p class="label"><img src="@/assets/about/location.svg" />Location</p>
           <p class="value">Indonesia, Bogor</p>
           <p class="label"><img src="@/assets/about/roles.svg" />Roles</p>
