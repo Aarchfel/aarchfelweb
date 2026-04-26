@@ -1,4 +1,5 @@
 # Very coolio website but goofy
+Keep in mind, im still learning frontend, so please dont ask my why it looks so bad ;w;
 
 ## Customize configuration
 
