@@ -48,7 +48,7 @@ onUnmounted(() => clearTimeout(to));
         </div>
       </div>
       <p class="bio">
-        Hello! I'm Fel or you can call me Aarch or Archie! I'm a 1r years old programmer and
+        Hello! I'm Fel or you can call me Aarch or Archie! I'm a 14 years old programmer and
         beginner pentester and an Artist! I love to explore things!
       </p>
       <div class="cta-buttons">
