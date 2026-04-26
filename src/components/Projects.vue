@@ -3,7 +3,8 @@ import { ref, computed, onMounted } from "vue";
 const reps = ref(null);
 
 const prevs = {
-  "aarchfel.app": "https://github.com/Aarchfel/aarchfel.app/preview/aarchfel.app.jpg",
+  "aarchfel.app":
+    "https://raw.githubusercontent.com/Aarchfel/aarchfel.app/main/preview/aarchfel.app.jpg",
 };
 
 const sorted = computed(() =>
