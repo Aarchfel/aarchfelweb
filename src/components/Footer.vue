@@ -24,7 +24,7 @@
     <hr />
     <div class="bottom">
       <span class="motto">L'Art du Savoir</span>
-      <a href="#" class="src">
+      <a href="https://github.com/Aarchfel/aarchfelweb" class="src">
         Website Source Code <img src="@/assets/footer/source.svg" alt="Source Code" />
       </a>
     </div>
