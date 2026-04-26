@@ -2,6 +2,10 @@
 import { ref, computed, onMounted } from "vue";
 const reps = ref(null);
 
+const prevs = {
+  "aarchfel.app": "https://github.com/Aarchfel/aarchfel.app/preview/aarchfel.app.png",
+};
+
 const sorted = computed(() =>
   reps.value?.toSorted((af, bef) => bef.stargazers_count - af.stargazers_count).slice(0, 6),
 );
@@ -24,7 +28,10 @@ onMounted(() => {
       <div class="card" v-for="repo in sorted" :key="repo.id">
         <div class="thumbnail">
           <img
-            :src="`https://opengraph.githubassets.com/1/${repo.owner.login}/${repo.name}`"
+            :src="
+              prevs[repo.name] ||
+              `https://opengraph.githubassets.com/1/${repo.owner.login}/${repo.name}`
+            "
             :alt="repo.name"
             @error="(err) => (err.target.style.display = 'none')"
           />
@@ -125,7 +132,7 @@ p a {
   position: relative;
   z-index: 1;
   display: block;
-  filter: blur(4px);
+  filter: blur(2px);
   transition: filter 0.3s ease;
 }
 
