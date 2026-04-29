@@ -52,15 +52,15 @@ onMounted(() => {
       <Profile class="relative z-1" />
     </section>
 
-    <section id="about" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[30vh]">
+    <section id="about" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[35vh]">
       <About />
     </section>
 
-    <section id="projects" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[30vh]">
+    <section id="projects" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[35vh]">
       <Project />
     </section>
 
-    <section id="contact" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[30vh]">
+    <section id="contact" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[35vh]">
       <Contact />
     </section>
   </main>
