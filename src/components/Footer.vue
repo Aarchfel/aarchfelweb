@@ -1,171 +1,71 @@
 <template>
-  <footer>
-    <div class="inner">
-      <div class="left">
-        <span class="name">Aarchfel</span>
-        <span class="sub">Discord Bot Dev · Frontend Dev · Pentester · Artist</span>
-        <span class="desc">Built with love and desperation and support from nothing.</span>
-        <span class="copy">© 2026 aarchfel. All rights reserved.</span>
+  <footer
+    class="font-sans relative overflow-hidden border border-t-white/5 bg-radial-[ellipse_at_15%_40%] from-white/3 to-transparent to-60% py-4 px-[19%] backdrop-blur-md"
+  >
+    <div class="text-white flex item-start justify-between gap-0">
+      <div class="flex flex-col gap-0.2">
+        <span class="font-quicksand text-white/90 text-base font-normal">Aarchfel</span>
+        <span class="text-xs text-white/50">
+          Discord Bot Dev · Frontend Dev · Pentester · Artist
+        </span>
+        <span class="text-medium mt-2 font-light text-white/50">
+          Built with love and desperation and support from nothing.
+        </span>
+        <span class="text-xs text-white/20 mt-9">© 2026 aarchfel. All rights reserved.</span>
       </div>
-      <div class="right">
-        <div class="links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+      <div class="flex flex-col items-end gap-3">
+        <div class="flex gap-4">
+          <a
+            href="#home"
+            class="text-sm text-white/35 transition-colors duration-200 ease-in hover:text-white cursor-pointer"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            class="text-sm text-white/35 transition-colors duration-200 ease-in hover:text-white cursor-pointer"
+          >
+            About
+          </a>
+          <a
+            href="#projects"
+            class="text-sm text-white/35 transition-colors duration-200 ease-in hover:text-white cursor-pointer"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            class="text-sm text-white/35 transition-colors duration-200 ease-in hover:text-white cursor-pointer"
+          >
+            Contact
+          </a>
         </div>
         <div class="socials">
-          <a href="https://github.com/aarchfel" target="_blank">
-            <img src="@/assets/footer/github.svg" alt="Github" />
+          <a href="https://github.com/aarchfel" target="_blank" class="group cursor-pointer">
+            <img
+              src="@/assets/footer/github.svg"
+              alt="Github"
+              class="opacity-50 transition-all duration-200 group-hover:opacity-100 w-8 h-8"
+            />
           </a>
         </div>
       </div>
     </div>
-    <hr />
-    <div class="bottom">
-      <span class="motto">L'Art du Savoir</span>
-      <a href="https://github.com/Aarchfel/aarchfelweb" class="src">
-        Website Source Code <img src="@/assets/footer/source.svg" alt="Source Code" />
+    <hr class="border-t-white/5 mt-5 mb-4" />
+    <div class="flex items-center justify-between">
+      <span class="text-xs text-white/15 italic">L'Art du Savoir</span>
+      <a
+        href="https://github.com/Aarchfel/aarchfelweb"
+        target="_blank"
+        class="group text-xs inline-flex items-center gap-1 text-white/20 transition-colors duration-200 hover:text-white cursor-pointer"
+      >
+        Website Source Code
+        <img
+          src="@/assets/footer/source.svg"
+          alt="Source Code"
+          class="w-4 h-4 opacity-20 transition-opacity duration-200 group-hover:opacity-100"
+        />
       </a>
     </div>
   </footer>
 </template>
-
-<style scoped>
-h1,
-h2,
-h3 {
-  font-family: "Nunito", sans-serif;
-}
-
-body,
-p,
-a,
-span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 250;
-}
-
-footer {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(ellipse at 15% 40%, rgba(255, 255, 255, 0.02) 0%, transparent 60%),
-    radial-gradient(ellipse at 85% 80%, rgba(255, 255, 255, 0.01) 0%, transparent 60%),
-    rgba(255, 255, 255, 0.001);
-  backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
-  padding: 2rem 19%;
-  padding-bottom: 1em;
-}
-
-.inner {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
-
-.name {
-  font-size: 1rem;
-  font-weight: 330;
-  color: white;
-}
-
-.sub {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.35);
-}
-
-.desc {
-  font-size: 0.9rem;
-  margin-top: 0.5em;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.copy {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.2);
-  margin-top: 2.5rem;
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1.4rem;
-}
-
-.links,
-.socials {
-  display: flex;
-  gap: 1.15rem;
-}
-
-.links a,
-.socials a {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.35);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.links a:hover,
-.socials a:hover {
-  color: white;
-}
-
-.socials a img {
-  width: 2rem;
-  height: 2rem;
-}
-
-hr {
-  border: none;
-  border-top: 0.5px solid rgba(255, 255, 255, 0.06);
-  margin: 1.25rem 0 1rem;
-}
-
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.motto {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.15);
-  font-style: italic;
-}
-
-.src {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.2);
-  text-decoration: none;
-  transition: color 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.src img {
-  width: 1em;
-  height: 1em;
-  opacity: 0.2;
-  transition: opacity 0.2s ease;
-}
-
-.src:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.src:hover img {
-  opacity: 0.5;
-}
-</style>

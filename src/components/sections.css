@@ -1,0 +1,79 @@
+@theme {
+  --animate-ticker: ticker 18s linear infinite;
+  --animate-blink: blink 1s step-start infinite;
+  --animate-glow: glowPulse 5s ease-in-out infinite alternate;
+
+  @keyframes ticker {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes blink {
+    from,
+    to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes glowPulse {
+    from {
+      text-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+    to {
+      text-shadow:
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255);
+    }
+  }
+}
+
+@layer utilities {
+  .animate-ticker-custom {
+    animation: ticker var(--dur, 180s) linear infinite;
+  }
+}
+
+@layer components {
+  .nav-li {
+    @apply no-underline text-white/50 text-base cursor-pointer transition-colors duration-200 hover:text-white;
+  }
+
+  .profile-primbtn {
+    @apply inline-flex items-center cursor-pointer bg-white/15 hover:bg-white/30 px-5 py-1.5 border border-white/10 shadow-[0_0_0_0_rgba(255,255,255,0)] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] rounded-xl text-xl justify-center backdrop-blur-xs transition-all duration-200 ease-in-out;
+  }
+
+  .profile-secbtn {
+    @apply inline-flex items-center cursor-pointer bg-transparent hover:bg-white/5 px-5 py-1.5 border border-white/10 rounded-xl text-xl justify-center backdrop-blur-xs transition-all duration-200 ease-in-out;
+  }
+
+  .about-label {
+    @apply font-quicksand flex text-base items-center text-white/30;
+  }
+
+  .about-label-img {
+    @apply w-4 h-4 opacity-35 mr-1;
+  }
+
+  .about-value {
+    @apply font-sans text-base text-white/80 ml-2;
+  }
+
+  .about-sub-card {
+    @apply bg-transparent rounded-sm p-0.5 min-w-0 overflow-hidden;
+  }
+
+  .ticker-badge {
+    @apply inline-flex items-center gap-1 text-sm px-2 py-1 rounded-sm bg-white/2 text-white/80 border border-white/5 no-underline whitespace-nowrap transition-all duration-200 hover:scale-105 hover:bg-white/10;
+  }
+
+  .ticker-badge-img {
+    @apply w-3.5 h-3.5 object-contain;
+  }
+}
