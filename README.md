@@ -1,6 +1,9 @@
 # Very coolio website but goofy
-Keep in mind, im still learning frontend, so please dont ask my why it looks so bad ;w;
-Ill add mobile support pretty soon.
+A Personal website made by aarchfel on discord, keep in mind im still learning lol, so yeah :p
+
+[ Preview ]
+<img width="1600" height="821" alt="aarchfel app" src="https://github.com/user-attachments/assets/079d2038-b739-4dc5-a94d-5f3bbd50e3bb" />
+
 
 ## Customize configuration
 
