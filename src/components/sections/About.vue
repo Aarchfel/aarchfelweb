@@ -75,6 +75,11 @@ const tools = [
     url: "https://nmap.org/",
     icon: "https://img.icons8.com/?size=96&id=9b5wowKIlo9d&format=png",
   },
+  {
+    name: "Vercel",
+    url: "https://vercel.com/",
+    icon: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
+  },
 ];
 </script>
 
