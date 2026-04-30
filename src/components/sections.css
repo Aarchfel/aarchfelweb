@@ -8,7 +8,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(var(--shift, -50%));
     }
   }
 
@@ -42,15 +42,15 @@
 
 @layer components {
   .nav-li {
-    @apply no-underline text-white/50 text-base cursor-pointer transition-colors duration-200 hover:text-white;
+    @apply no-underline text-white/50 text-sm md:text-base cursor-pointer transition-colors duration-200 hover:text-white;
   }
 
   .profile-primbtn {
-    @apply inline-flex items-center cursor-pointer bg-white/15 hover:bg-white/30 px-5 py-1.5 border border-white/10 shadow-[0_0_0_0_rgba(255,255,255,0)] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] rounded-xl text-xl justify-center backdrop-blur-xs transition-all duration-200 ease-in-out;
+    @apply inline-flex items-center cursor-pointer bg-white/15 hover:bg-white/30 px-5 py-1.5 border border-white/10 shadow-[0_0_0_0_rgba(255,255,255,0)] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] rounded-xl text-base md:text-xl justify-center backdrop-blur-xs transition-all duration-200 ease-in-out;
   }
 
   .profile-secbtn {
-    @apply inline-flex items-center cursor-pointer bg-transparent hover:bg-white/5 px-5 py-1.5 border border-white/10 rounded-xl text-xl justify-center backdrop-blur-xs transition-all duration-200 ease-in-out;
+    @apply inline-flex items-center cursor-pointer bg-transparent hover:bg-white/5 px-5 py-1.5 border border-white/10 rounded-xl text-base md:text-xl justify-center backdrop-blur-xs transition-all duration-200 ease-in-out;
   }
 
   .about-label {

@@ -83,7 +83,7 @@ const tools = [
     <h1 class="font-sans text-4xl font-extralight mb-2">About Me</h1>
     <p class="font-quicksand text-base text-white/30 mb-7">Who I am and what I do</p>
     <div class="flex flex-col gap-10">
-      <div class="grid p-2 grid-cols-[27rem_1fr]">
+      <div class="grid p-2 grid-cols-1 md:grid-cols-[24rem_1fr]">
         <div class="flex flex-col gap-1">
           <p class="about-label"><img src="@/assets/about/age.svg" class="about-label-img" />Age</p>
           <p class="about-value">~14 Years Old</p>
@@ -101,7 +101,7 @@ const tools = [
           <p class="about-value">L'Art du Savoir</p>
         </div>
 
-        <div class="flex flex-col gap-1">
+        <div class="flex flex-col gap-2 mt-8 md:mt-0">
           <div class="flex flex-col gap-0.5">
             <p class="text-lg text-white/90 font-light">
               Hi! I'm Fel, also known as Aarch or Archie — a
@@ -125,7 +125,7 @@ const tools = [
         </div>
       </div>
 
-      <div class="grid grid-cols-[1fr_12rem_18rem] gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_12rem_18rem] gap-4">
         <div class="about-sub-card">
           <p class="about-label">
             <img src="@/assets/about/tools.svg" class="about-label-img" />Technologies I used

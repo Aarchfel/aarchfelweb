@@ -4,7 +4,7 @@
     <p class="font-quicksand text-base text-white/30 mb-7">
       Feel free to reach out and talk with me
     </p>
-    <div class="grid grid-cols-[1fr_1px_20rem] gap-3">
+    <div class="grid grid-cols-1 md:grid-cols-[1fr_1px_20rem] gap-3">
       <div class="flex flex-col">
         <p class="text-base text-white/70 font-normal mb-3">
           Feel free to talk me, I'm always open to talk — whether it's about code, art, security, or
@@ -13,9 +13,10 @@
         <p class="text-base text-white/70 font-light">Best way to reach me is Discord or Email.</p>
       </div>
 
-      <div class="w-px h-full min-h-25 bg-white/10"></div>
+      <div class="hidden md:block w-px h-full min-h-25 bg-white/5"></div>
+      <hr class="border-t border-white/5 md:hidden" />
 
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-2 px-12 md:px-0 mt-2 md:mt-0">
         <a href="mailto:aarchfel@gmail.com" class="flex items-center w-fit group">
           <img
             src="@/assets/contact/gmail.svg"

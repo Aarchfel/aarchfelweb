@@ -39,24 +39,26 @@ onUnmounted(() => clearTimeout(to));
 <template>
   <section class="font-sans text-white py-20 mt-35">
     <div class="flex flex-col mx-auto max-w-6xl gap-6 px-6">
-      <div class="flex items-center gap-3">
+      <div class="flex flex-col sm:flex-row items-center gap-3">
         <img
           src="@/assets/profile/Profile.png"
-          class="w-52 h-52 rounded-2xl object-cover pointer-events-none select-none"
+          class="w-44 h-44 sm:w-52 sm:h-52 rounded-2xl object-cover pointer-events-none select-none"
         />
-        <div class="flex flex-col justify-center mt-18">
+        <div class="flex flex-col justify-center mt-0 sm:mt-18 w-full">
           <h1 class="font-sans text-white/70 font-extralight text-3xl leading-tight">Hi, I'm</h1>
           <h1
-            class="font-quicksand leading-none text-5xl font-normal mb-2 animate-glow tracking-tighter"
+            class="font-quicksand leading-none text-3xl sm:text-5xl font-normal mb-2 animate-glow tracking-tighter"
           >
             Aarchfel
           </h1>
-          <p class="font-quicksand text-white/65 text-xl">
+          <p
+            class="font-quicksand text-white/65 text-lg sm:text-xl min-h-7 sm:min-h-8 overflow-hidden whitespace-nowrap"
+          >
             {{ display }}<span class="animate-blink">|</span>
           </p>
         </div>
       </div>
-      <p class="text-white/65 text-xl">
+      <p class="text-white/65 text-lg">
         Greetings! I'm Fel or you can call me Aarch or Archie! I'm a 14 years old programmer and
         beginner pentester and an Artist! I love to explore things!
       </p>

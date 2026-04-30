@@ -47,20 +47,29 @@ onMounted(() => {
     >
       <img
         src="@/assets/background.png"
-        class="absolute inset-0 w-full h-full object-cover opacity-12 z-0"
+        class="absolute inset-0 w-full h-full object-cover opacity-12 z-0 select-none"
       />
       <Profile class="relative z-1" />
     </section>
 
-    <section id="about" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[35vh]">
+    <section
+      id="about"
+      class="sect-anim px-4 md:px-12 lg:px-[20vw] min-h-screen bg-neutral-900 py-25"
+    >
       <About />
     </section>
 
-    <section id="projects" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[35vh]">
+    <section
+      id="projects"
+      class="sect-anim px-4 md:px-12 lg:px-[20vw] min-h-screen bg-neutral-900 py-25"
+    >
       <Project />
     </section>
 
-    <section id="contact" class="sect-anim min-h-screen bg-neutral-900 py-25 px-[35vh]">
+    <section
+      id="contact"
+      class="sect-anim px-4 md:px-12 lg:px-[20vw] min-h-screen bg-neutral-900 py-25"
+    >
       <Contact />
     </section>
   </main>

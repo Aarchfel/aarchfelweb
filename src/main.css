@@ -5,12 +5,12 @@
   --font-sans: "Satoshi", sans-serif;
   --font-heading: "DM Sans", sans-serif;
   --font-quicksand: "Quicksand", sans-serif;
-  --font-amiri: "Amiri Quran", serif;
   --color-neutral-900: rgb(23, 23, 23);
   --background-image-hero-pattern:
-    radial-gradient(ellipse at 55% 60%, rgba(255, 255, 255, 0.25) 4%, transparent 60%),
-    radial-gradient(ellipse at 55% 40%, rgba(101, 22, 161, 0.19) 0%, transparent 50%);
+    radial-gradient(ellipse at 65% 60%, rgba(255, 255, 255, 0.25) 4%, transparent 60%),
+    radial-gradient(ellipse at 65% 40%, rgba(101, 22, 161, 0.19) 0%, transparent 50%);
   --animate-reveal: rev 1.2s ease forwards;
+  --animate-swing: slow-swing 20s ease infinite;
 
   @keyframes rev {
     from {
@@ -20,6 +20,18 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes slow-swing {
+    from {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-160deg);
+    }
+    to {
+      transform: rotate(0deg);
     }
   }
 }

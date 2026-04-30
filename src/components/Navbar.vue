@@ -41,7 +41,7 @@ onUnmounted(() => {
 
 <template>
   <nav
-    class="font-sans fixed flex items-center w-full z-10 h-20 box-border px-6 backdrop-blur-md border-b bg-neutral-900/70 border-b-white/5 transition-transform duration-300 ease-in-out bg-[linear-gradient(to_right,rgba(23,23,23,0.3)_75%,rgba(255,255,255,0.06))]"
+    class="font-sans fixed flex items-center w-full z-10 h-20 box-border px-6 backdrop-blur-md border-b bg-neutral-900/70 border-b-white/5 transition-transform duration-300 ease-in-out bg-[linear-gradient(to_right,rgba(23,23,23,0.3)_75%,rgba(255,255,255,0.06))] overflow-hidden"
     :class="{ '-translate-y-full': hidden }"
   >
     <a
@@ -52,7 +52,7 @@ onUnmounted(() => {
         class="w-5 h-5 opacity-50 transition-opacity duration-200 group-hover:opacity-90"
       />Aarchfel</a
     >
-    <ul class="flex list-none gap-5 ml-auto">
+    <ul class="flex list-none gap-2 sm:gap-5 ml-auto">
       <li>
         <a href="#home" @click="onNavClick" class="nav-li">Home</a>
       </li>
@@ -60,5 +60,9 @@ onUnmounted(() => {
       <li><a href="#projects" @click="onNavClick" class="nav-li">Projects</a></li>
       <li><a href="#contact" @click="onNavClick" class="nav-li">Contact</a></li>
     </ul>
+
+    <div class="absolute -right-10 top-10 -translate-y-1/2 opacity-10 pointer-events-none">
+      <img src="@/assets/star.svg" class="w-42 h-42 animate-swing" alt="" />
+    </div>
   </nav>
 </template>

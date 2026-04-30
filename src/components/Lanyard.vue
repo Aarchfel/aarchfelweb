@@ -57,7 +57,7 @@ onMounted(() => sTimer());
 <template>
   <div
     v-if="hasActivity"
-    class="font-sans fixed bottom-0 left-0 z-999 transition-transform duration-500 ease-in-out"
+    class="hidden md:block font-sans fixed bottom-0 left-0 z-999 transition-transform duration-500 ease-in-out"
     :class="isVis ? 'translate-y-0' : 'translate-y-[calc(100%-10px)]'"
     @mouseenter="showB"
     @mouseleave="sTimer"
