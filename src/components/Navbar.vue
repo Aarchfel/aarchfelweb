@@ -41,7 +41,7 @@ onUnmounted(() => {
 
 <template>
   <nav
-    class="font-sans fixed flex items-center w-full z-10 h-20 box-border px-6 backdrop-blur-md border-b bg-neutral-900/70 border-b-white/5 transition-transform duration-300 ease-in-out bg-[linear-gradient(to_right,rgba(23,23,23,0.3)_75%,rgba(255,255,255,0.06))] overflow-hidden"
+    class="font-sans fixed flex items-center w-full z-10 h-20 box-border px-6 md:px-[15%] backdrop-blur-md border-b bg-neutral-900/70 border-b-white/5 transition-transform duration-300 ease-in-out bg-[linear-gradient(to_right,rgba(23,23,23,0.3)_75%,rgba(255,255,255,0.06))] overflow-hidden"
     :class="{ '-translate-y-full': hidden }"
   >
     <a
@@ -62,7 +62,7 @@ onUnmounted(() => {
     </ul>
 
     <div class="absolute -right-10 top-10 -translate-y-1/2 opacity-10 pointer-events-none">
-      <img src="@/assets/star.svg" class="w-42 h-42 animate-swing" alt="" />
+      <img src="@/assets/star.svg" class="w-42 h-42 animate-swing select-none" alt="" />
     </div>
   </nav>
 </template>
